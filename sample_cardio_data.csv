@@ -1,0 +1,11 @@
+age,gender,height,weight,ap_hi,ap_lo,cholesterol,gluc,smoke,alco,active,stress
+35,Female,165,68,120,80,Normal (1),Normal (1),Non-smoker,Non-drinker,Moderately Active,Low
+50,Male,178,85,140,90,Above Normal (2),Normal (1),Smoker,Moderate Drinker,Sedentary,High
+62,Female,160,72,160,100,Well Above (3),Above Normal (2),Non-smoker,Non-drinker,Very Active,Moderate
+45,Male,170,75,130,85,Normal (1),Normal (1),Non-smoker,Non-drinker,Moderately Active,Low
+70,Female,155,60,150,95,Above Normal (2),Well Above (3),Smoker,Heavy Drinker,Sedentary,High
+30,Male,180,90,110,70,Normal (1),Normal (1),Non-smoker,Non-drinker,Very Active,Low
+55,Female,168,70,135,88,Above Normal (2),Normal (1),Non-smoker,Moderate Drinker,Moderately Active,Moderate
+40,Male,172,78,125,82,Normal (1),Above Normal (2),Smoker,Non-drinker,Sedentary,High
+68,Female,163,65,155,98,Well Above (3),Normal (1),Non-smoker,Heavy Drinker,Very Active,Moderate
+48,Male,175,82,128,83,Normal (1),Normal (1),Non-smoker,Non-drinker,Moderately Active,Low
