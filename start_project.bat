@@ -1,0 +1,13 @@
+
+@echo off
+echo Starting CardioVascular Risk Predictor Pro...
+
+echo Starting Backend (FastAPI)...
+start "Backend API" cmd /k "cd backend && pip install -r requirements.txt && uvicorn app.main:app --reload"
+
+echo Starting Frontend (Next.js)...
+start "Frontend App" cmd /k "cd frontend && npm install && npm run dev"
+
+echo Both services are starting...
+echo Backend: http://localhost:8000
+echo Frontend: http://localhost:3000
