@@ -1,7 +1,8 @@
 import pandas as pd
 import numpy as np
+import os
 
-def create_sample_csv(filename="sample_cardio_data.csv"):
+def create_sample_csv(filename=os.path.join("data", "sample_cardio_data.csv")):
     """
     Creates a sample CSV file with dummy cardiovascular health data
     for testing the bulk prediction feature.

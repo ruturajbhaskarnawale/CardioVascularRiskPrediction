@@ -2,9 +2,10 @@
 
 import sqlite3
 import hashlib
+import os
 
 # --- Database Connection ---
-conn = sqlite3.connect('user_data.db', check_same_thread=False)
+conn = sqlite3.connect(os.path.join('data', 'user_data.db'), check_same_thread=False)
 c = conn.cursor()
 
 # --- Password Hashing ---

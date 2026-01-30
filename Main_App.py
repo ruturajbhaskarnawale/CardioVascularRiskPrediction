@@ -13,11 +13,11 @@ import database as db
 
 # --- Load Model and Scaler ---
 try:
-    best_model = joblib.load('cardio_model.pkl')
-    scaler = joblib.load('scaler.pkl')
+    best_model = joblib.load(os.path.join('models', 'cardio_model.pkl'))
+    scaler = joblib.load(os.path.join('models', 'scaler.pkl'))
 except FileNotFoundError:
     st.error("Error: Model or scaler files not found.")
-    st.error("Please ensure 'cardio_model.pkl' and 'scaler.pkl' are in the same directory as this script.")
+    st.error("Please ensure 'cardio_model.pkl' and 'scaler.pkl' are in the 'models' directory.")
     st.stop()
 
 numerical_cols = ['age', 'height', 'ap_hi', 'ap_lo', 'bmi']
@@ -433,10 +433,10 @@ def generate_pdf_report(user_input_report, rec_data):
     Generates a downloadable PDF report from user inputs and prediction results.
     """
     pdf = PDF()
-    pdf.add_font('DejaVu', '', 'DejaVuSans.ttf', uni=True)
-    pdf.add_font('DejaVu', 'B', 'DejaVuSans-Bold.ttf', uni=True)
-    pdf.add_font('DejaVu', 'I', 'DejaVuSans-Oblique.ttf', uni=True)
-    pdf.add_font('DejaVu', 'BI', 'DejaVuSans-BoldOblique.ttf', uni=True)
+    pdf.add_font('DejaVu', '', os.path.join('assets', 'fonts', 'DejaVuSans.ttf'), uni=True)
+    pdf.add_font('DejaVu', 'B', os.path.join('assets', 'fonts', 'DejaVuSans-Bold.ttf'), uni=True)
+    pdf.add_font('DejaVu', 'I', os.path.join('assets', 'fonts', 'DejaVuSans-Oblique.ttf'), uni=True)
+    pdf.add_font('DejaVu', 'BI', os.path.join('assets', 'fonts', 'DejaVuSans-BoldOblique.ttf'), uni=True)
     pdf.add_page()
     
     # 1. Prediction Summary
@@ -516,7 +516,7 @@ EDUCATIONAL_CONTENT = {
             "**Elevated BP**: 120-129 systolic and less than 80 diastolic.",
             "**Hypertension Stage 1**: 130-139 systolic or 80-89 diastolic."
         ],
-        "image": r"C:\Users\rutur\OneDrive\Documents\5TH_ML\educationalHub_image\bloodPressure.jpg" # Verified Link
+        "image": os.path.join("assets", "images", "bloodPressure.jpg")
     },
     "Managing Cholesterol": {
         "video_url": "https://www.youtube.com/watch?v=fLonh7ZesKs", # Verified Link
@@ -527,7 +527,7 @@ EDUCATIONAL_CONTENT = {
             "**Diet**: Reduce saturated and trans fats. Increase soluble fiber (oats, fruits, beans).",
             "**Exercise**: Regular physical activity can raise HDL and lower LDL."
         ],
-        "image": r"C:\Users\rutur\OneDrive\Documents\5TH_ML\educationalHub_image\cholestrol.jpg" # Verified Link
+        "image": os.path.join("assets", "images", "cholestrol.jpg")
     },
     "The Importance of Physical Activity": {
         "video_url": "https://www.youtube.com/watch?v=c0R7z88Dk7E", # Verified Link
@@ -538,7 +538,7 @@ EDUCATIONAL_CONTENT = {
             "**Consistency is Key**: Even short bursts of activity throughout the day add up.",
             "**Benefits**: Improves circulation, strengthens the heart muscle, and helps manage stress."
         ],
-        "image": r"C:\Users\rutur\OneDrive\Documents\5TH_ML\educationalHub_image\physicalActivity.jpg" # Verified Link
+        "image": os.path.join("assets", "images", "physicalActivity.jpg")
     },
     "The DASH Diet for a Healthy Heart": {
         "video_url": "https://www.youtube.com/watch?v=jaln_gM_0_Y", # Verified Link
@@ -549,7 +549,7 @@ EDUCATIONAL_CONTENT = {
             "**Limit**: Foods high in saturated fat (fatty meats, full-fat dairy), sugar-sweetened beverages, and sweets.",
             "**Reduce Sodium**: Aim for 2,300 mg per day, with an ideal limit of 1,500 mg for most adults."
         ],
-        "image": r"C:\Users\rutur\OneDrive\Documents\5TH_ML\educationalHub_image\dashDiet.jpg" # Verified Link
+        "image": os.path.join("assets", "images", "dashDiet.jpg")
     },
     "How Stress Affects Your Heart": {
         "video_url": "https://www.youtube.com/watch?v=00j_Am_K-sU", # Verified Link
@@ -560,7 +560,7 @@ EDUCATIONAL_CONTENT = {
             "**Management Techniques**: Practice relaxation techniques like meditation, deep breathing, or yoga.",
             "**Stay Active**: Physical activity is a powerful natural stress reliever."
         ],
-        "image": r"C:\Users\rutur\OneDrive\Documents\5TH_ML\educationalHub_image\streess.jpg" # Verified Link
+        "image": os.path.join("assets", "images", "streess.jpg")
     },
     "The Link Between Diabetes and Heart Disease": {
         "video_url": "https://www.youtube.com/watch?v=UK43o4_y3yA", # Verified Link
@@ -571,7 +571,7 @@ EDUCATIONAL_CONTENT = {
             "**Lifestyle is Key**: A heart-healthy diet and regular exercise are critical for managing both diabetes and heart health.",
             "**Don't Smoke**: Smoking significantly increases the risk of heart disease, especially for people with diabetes."
         ],
-        "image": r"C:\Users\rutur\OneDrive\Documents\5TH_ML\educationalHub_image\diabeties.jpg" # Verified Link
+        "image": os.path.join("assets", "images", "diabeties.jpg")
     }
 }
 
@@ -685,7 +685,7 @@ def find_resources_in_dataset(city_name, resource_type, max_distance_km):
     """
     try:
         # Load the new dataset file
-        df = pd.read_csv("india_health_facilities.csv")
+        df = pd.read_csv(os.path.join("data", "india_health_facilities.csv"))
 
         user_location = MAJOR_CITIES.get(city_name)
         if not user_location:
@@ -1925,7 +1925,7 @@ def main():
                     st.sidebar.warning("Please enter both a username and password.")
         
         st.info("Please Login or Sign Up using the sidebar to access the application.")
-        st.image("signup.png", caption="Your personalized health journey starts here.")
+        st.image(os.path.join("assets", "images", "signup.png"), caption="Your personalized health journey starts here.")
 
     # This disclaimer can be at the bottom, it's fine
     st.markdown(

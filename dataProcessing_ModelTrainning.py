@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import os
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
@@ -12,7 +13,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load dataset
-data = pd.read_csv(r"C:\Users\rutur\OneDrive\Documents\5TH_ML\cardio_train.csv")
+data = pd.read_csv(os.path.join("data", "cardio_train.csv"))
 
 # Data Preprocessing
 # Handle outliers using IQR
@@ -98,8 +99,8 @@ plt.legend()
 plt.show()
 
 # Save model and scaler
-joblib.dump(best_model, 'cardio_model.pkl')
-joblib.dump(scaler, 'scaler.pkl')
+joblib.dump(best_model, os.path.join('models', 'cardio_model.pkl'))
+joblib.dump(scaler, os.path.join('models', 'scaler.pkl'))
 
 # Prediction function
 def predict_disease(user_input):
